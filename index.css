@@ -1,0 +1,241 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* background-color: aliceblue; */
+}
+
+/* .background {
+    background-image: url(img/1.jpg);
+    background-size: 1550px 400px;
+    background-size: 100% 450px;
+    background-repeat: no-repeat; 
+    opacity:0.5;
+    filter: brightness(10%);
+} */
+section{
+    /* border: 20px solid yellow; */
+    height: 60%;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: url('/IMG/1.jpg') no-repeat center center/cover;
+    background-size: 100% 450px;
+    z-index: -1;
+    filter: blur(2px);
+    /* opacity: 0.8; */
+    border: 2px solid red;
+}
+
+.nav {
+    position: fixed;
+    top: 0px;
+}
+
+.nav img {
+    display: inline-block;
+    /* position: absolute;
+    left: 10px;
+    top: 10px; */
+    /* border: 2px solid red; */
+    height: 90px;
+}
+
+.nav ul {
+    padding: 0px;
+    margin-top: 14px;
+    margin-left: -20px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    /* border: 2px solid red; */
+}
+
+.nav .ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.nav .ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+.nav .ul {
+    list-style: none;
+    /* border: 2px solid green; */
+}
+
+.container {
+    height: 320px;
+    width: 50%;
+    display: block;
+    margin: auto;
+    display: flex;
+    /* border: 2px solid yellow; */
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.container .info {
+    color: black;
+}
+
+.container button {
+    /* display: block;
+    margin: 25px auto;
+    border-radius: 5px;
+    height: 25px;
+    width: 100px; */
+    display: block;
+    /* padding: 10px 0px; */
+    margin: 25px auto;
+    border-radius: 5px;
+    height: 40px;
+    width: 125px;
+}
+
+.container button a {
+    font-weight: bolder;
+}
+
+.container button a {
+    text-decoration: none;
+}
+
+.container2 {
+    height: 320px;
+    width: 100%;
+    /* display: block;
+    margin: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid yellow; */
+}
+
+.container2 #info {
+    font-family: serif;
+    font-size: medium;
+}
+
+.container2 .box {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid green; */
+    height: 270px;
+    width: 300px;
+    margin: 50px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: cadetblue;
+}
+
+.container2 .box img {
+    height: 150px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+h2 {
+    text-align: center;
+    background-color: gray;
+}
+
+.container2 .box h3 {
+    margin: 0px;
+    padding: 5px;
+}
+
+hr {
+    margin: 20px;
+}
+
+.container3 .clients {
+    /* height: 150px; */
+    height: auto;
+    width: 100%;
+    /* border: 2px solid green; */
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: coral; */
+}
+
+.container3 .clients img {
+    margin: 20px;
+    width: 150;
+    height: 50px;
+}
+
+.container3 .clients #microsoft {
+    height: 80px;
+    width: 150px;
+}
+
+.contact .contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-bottom: 25px; */
+    /* border-radius: 3px; */
+}
+
+.contact .form .form-group input,
+.contact .form .form-group textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.btn {
+    height: 40px;
+    /* border: 2px solid yellow; */
+}
+
+.btn button {
+    display: block;
+    /* margin-bottom: 20px; */
+    margin: auto;
+    /* padding: 20px; */
+    border-radius: 5px;
+    height: 25px;
+    width: 150px;
+    /* border: 2px solid green;   */
+}
+
+.contact,
+.container2,
+.container3 {
+    background-color: burlywood;
+}
+
+.btn button:hover {
+    background-color: blueviolet;
+    cursor: pointer;
+    color: brown;
+}
+
+.container button:hover {
+    background-color: blueviolet;
+    cursor: pointer;
+    color: brown;
+}
